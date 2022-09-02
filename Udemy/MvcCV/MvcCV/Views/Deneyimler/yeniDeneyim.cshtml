@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewBag.Title = "yeniDeneyim";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<form class="form-group" method="post">
+    <div>
+        <label>Başlık :</label>
+        <input type="text" class="form-control" name="TITLE" />
+    </div>
+    <br />
+    <div>
+        <label>Alt Başlık :</label>
+        <input type="text" class="form-control" name="SUBTITLE"/>
+    </div>
+    <br />
+    <div>
+        <label>Tarih :</label>
+        <input type="text" class="form-control" name="DATE"/>
+    </div>
+    <br />
+    <div>
+        <label>Detaylar :</label>
+        <textarea class="form-control" rows="10" name="DETAILS"></textarea>
+    </div>
+    <br />
+    <button class="btn btn-info">Kaydet</button>
+</form>

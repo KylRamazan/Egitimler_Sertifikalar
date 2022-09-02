@@ -1,0 +1,45 @@
+﻿@model MvcKutuphane.Models.Entity.TblUyeler
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutPanelim.cshtml";
+}
+
+<div style="margin-top:25px">
+    <h2>Kütüphane Üye Profil Bilgileri</h2>
+</div>
+
+@using (Html.BeginForm("Index2", "Panelim", FormMethod.Post))
+{
+<table class="table table-borderless" style="margin-top:30px">
+    <tr>
+        <td><b>Öğrenci ID :</b> @Html.TextBoxFor(x => x.ID, new { @class = "form-control", @style = "margin-top:5px" })</td>
+    </tr>
+    <tr>
+        <td><b>Ad :</b> @Html.TextBoxFor(x => x.AD, new { @class = "form-control", @style = "margin-top:5px" })</td>
+    </tr>
+    <tr>
+        <td><b>Soyad :</b> @Html.TextBoxFor(x => x.SOYAD, new { @class = "form-control", @style = "margin-top:5px" })</td>
+    </tr>
+    <tr>
+        <td><b>Mail :</b> @Html.TextBoxFor(x => x.MAIL, new { @class = "form-control", @style = "margin-top:5px" })</td>
+    </tr>
+    <tr>
+        <td><b>Kullanıcı Adı :</b> @Html.TextBoxFor(x => x.KULLANICIADI, new { @class = "form-control", @style = "margin-top:5px" })</td>
+    </tr>
+    <tr>
+        <td><b>Şifre :</b> @Html.TextBoxFor(x => x.SIFRE, new { @class = "form-control", @style = "margin-top:5px" })</td>
+    </tr>
+    <tr>
+        <td><b>Fotoğraf :</b> @Html.TextBoxFor(x => x.FOTOGRAF, new { @class = "form-control", @style = "margin-top:5px" })</td>
+    </tr>
+    <tr>
+        <td><b>Telefon :</b> @Html.TextBoxFor(x => x.TELEFON, new { @class = "form-control", @style = "margin-top:5px" })</td>
+    </tr>
+    <tr>
+        <td><b>Okul :</b> @Html.TextBoxFor(x => x.OKUL, new { @class = "form-control", @style = "margin-top:5px" })</td>
+    </tr>
+    <tr>
+        <td><button class="btn btn-success">Güncelle</button></td>
+    </tr>
+</table>
+}

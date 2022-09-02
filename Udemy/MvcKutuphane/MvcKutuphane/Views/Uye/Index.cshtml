@@ -1,0 +1,37 @@
+﻿@using MvcKutuphane.Models.Entity
+@using PagedList.Mvc;
+@using PagedList;
+@model PagedList.IPagedList<TblUyeler>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Üye İşlemleri</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>AD</th>
+        <th>SOYAD</th>
+        <th>MAİL</th><th>TELEFON</th>
+        <th>OKUL</th>
+        <th>SİL</th>
+        <th>GÜNCELLE</th>
+        <th>KİTAP GEÇMİŞİ</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.ID</td>
+            <td>@x.AD</td>
+            <td>@x.SOYAD</td>
+            <td>@x.MAIL</td><td>@x.TELEFON</td>
+            <td>@x.OKUL</td>
+            <td>@Html.ActionLink("Sil", "uyeSil", new { id = x.ID }, new { @class = "btn btn-danger", onclick = "return confirm('Üyeyi Silmek İstiyor Musunuz?')" })</td>
+            <td><a href="/Uye/uyeGetir/@x.ID" class="btn btn-success">Güncelle</a></td>
+            <td><a href="/Uye/uyeKitapGecmis/@x.ID" class="btn btn-info">Kitap Geçmişi</a></td>
+        </tr>
+    }
+</table>
+@Html.PagedListPager((IPagedList)Model,sayfa=>Url.Action("Index",new { sayfa}))
+<a href="/Uye/uyeEkle/" class="btn btn-primary">Yeni Üye Ekle</a>

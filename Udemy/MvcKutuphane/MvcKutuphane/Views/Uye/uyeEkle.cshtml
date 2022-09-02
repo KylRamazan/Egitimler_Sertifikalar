@@ -1,0 +1,41 @@
+﻿@model MvcKutuphane.Models.Entity.TblUyeler
+@{
+    ViewBag.Title = "uyeEkle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="form-group" method="post">
+    <div style="margin-top:15px;">
+        <label>Ad :</label><br />
+        @Html.TextBoxFor(x => x.AD, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.AD, "", new { @style = "color:red" })
+        <br />
+        <label>Soyad :</label><br />
+        @Html.TextBoxFor(x => x.SOYAD, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.SOYAD, "", new { @style = "color:red" })
+        <br />
+        <label>Mail :</label><br />
+        @Html.TextBoxFor(x => x.MAIL, new { @class = "form-control" })
+        <br />
+        <label>Kullanıcı Adı :</label><br />
+        @Html.TextBoxFor(x => x.KULLANICIADI, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.KULLANICIADI, "", new { @style = "color:red" })
+        <br />
+        <label>Şifre :</label><br />
+        @Html.TextBoxFor(x => x.SIFRE, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.SIFRE, "", new { @style = "color:red" })
+        <br />
+        <label>Fotoğraf :</label><br />
+        @Html.TextBoxFor(x => x.FOTOGRAF, new { @class = "form-control" })
+        <br />
+        <label>Telefon :</label><br />
+        @Html.TextBoxFor(x => x.TELEFON, new { placeholder = "0500 000 00 00", @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.TELEFON, "", new { @style = "color:red" })
+        <br />
+        <label>Okul :</label><br />
+        @Html.TextBoxFor(x => x.OKUL, new { @class = "form-control" })
+    </div>
+    <div style="margin-top:20px;">
+        <button class="btn btn-info">Üye Ekle</button>
+    </div>
+</form>

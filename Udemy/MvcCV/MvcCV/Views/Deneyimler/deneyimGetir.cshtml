@@ -1,0 +1,27 @@
+﻿@model MvcCV.Models.Entity.TblExperience
+@{
+    ViewBag.Title = "deneyimGetir";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+@using (Html.BeginForm("deneyimGuncelle", "Deneyimler", FormMethod.Post))
+{
+    <div class="form-group">
+        <label>ID :</label><br />
+        @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
+        <br />
+        <label>Başlık :</label><br />
+        @Html.TextBoxFor(x => x.TITLE, new { @class = "form-control" })
+        <br />
+        <label>Alt Başlık :</label><br />
+        @Html.TextBoxFor(x => x.SUBTITLE, new { @class = "form-control" })
+        <br />
+        <label>Detaylar :</label><br />
+        @Html.TextBoxFor(x => x.DETAILS, new { @class = "form-control" })
+        <br />
+        <label>Tarih :</label><br />
+        @Html.TextBoxFor(x => x.DATE, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-warning">Güncelle</button>
+    </div>
+}

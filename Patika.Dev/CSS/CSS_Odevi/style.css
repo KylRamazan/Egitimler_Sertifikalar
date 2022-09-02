@@ -1,0 +1,46 @@
+.center {
+    text-align: center;
+  }
+
+.baslik{
+    color: rgb(214, 4, 4);
+    text-align: center;   
+  }
+
+.sayfa-baslik{
+    color:purple;
+    text-align: center;  
+  }
+
+.liste-baslik{
+    color:rgb(175, 170, 19);
+    text-align: center;
+}
+
+.liste{
+    list-style-position: inside;
+    text-align: center;
+}
+
+body{
+    background-color: rgb(231, 231, 231);
+}
+
+.baslik-renk{
+    color:rgb(175, 170, 19);
+}
+
+.urun{
+    text-align: center;
+}
+
+.center-fiyat{
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.urun-gorsel{
+    width: 350px;
+    height: 350px;
+    position: relative;
+}

@@ -1,0 +1,38 @@
+﻿@model MvcCV.Models.Sinif.Class1
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>BAŞLIK</th>
+            <th>ALT BAŞLIK</th>
+            <th>BÖLÜM</th>
+            <th>GNO</th>
+            <th>TARİH</th>
+            <th>SİL</th>
+            <th>GÜNCELLE</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var x in Model.deger3)
+        {
+        <tr>
+            <th>@x.ID</th>
+            <td>@x.TITLE</td>
+            <td>@x.SUBTITLE</td>
+            <td>@x.DEPARTMENT</td>
+            <td>@x.GPA</td>
+            <td>@x.DATE</td>
+            <td>@Html.ActionLink("Sil", "egitimSil", new { id = x.ID }, new { @class = "btn btn-danger", onclick = "return confirm('Eğitimi Gerçekten Silmek İstiyor Musunuz?')" })</td>
+            <td><a href="/EgitimHayatim/egitimGetir/@x.ID" class="btn btn-success">Güncelle</a></td>
+        </tr>
+        }
+    </tbody>
+</table>
+
+<a href="/EgitimHayatim/yeniEgitim/" class="btn btn-primary">Yeni Eğitim Ekle</a>

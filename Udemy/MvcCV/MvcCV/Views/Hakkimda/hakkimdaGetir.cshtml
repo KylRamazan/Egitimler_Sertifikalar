@@ -1,0 +1,33 @@
+﻿@model MvcCV.Models.Entity.TblAbout
+@{
+    ViewBag.Title = "hakkimdaGetir";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+@using (Html.BeginForm("hakkimdaGuncelle","Hakkimda",FormMethod.Post))
+{
+<div class="form-group">
+    <label>ID :</label><br />
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
+    <br />
+    <label>Ad :</label><br />
+    @Html.TextBoxFor(x => x.NAME, new { @class = "form-control" })
+    <br />
+    <label>Soyad :</label><br />
+    @Html.TextBoxFor(x => x.SURNAME, new { @class = "form-control" })
+    <br />
+    <label>Adres :</label><br />
+    @Html.TextBoxFor(x => x.ADDRESS, new { @class = "form-control" })
+    <br />
+    <label>Telefon :</label><br />
+    @Html.TextBoxFor(x => x.PHONE, new { @class = "form-control" })
+    <br />
+    <label>Mail :</label><br />
+    @Html.TextBoxFor(x => x.MAIL, new { @class = "form-control" })
+    <br />
+    <label>Hakkımda :</label><br />
+    @Html.TextAreaFor(x => x.ABOUT, new { @class = "form-control" ,@rows="10px"})
+    <br />
+    <button class="btn btn-warning">Güncelle</button>
+</div>
+}

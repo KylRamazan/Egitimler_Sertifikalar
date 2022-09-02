@@ -1,0 +1,20 @@
+﻿@model MvcKutuphane.Models.Entity.TblPersoneller
+@{
+    ViewBag.Title = "personelEkle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form class="form-group" method="post">
+    <div style="margin-top:15px;">
+        <label>Ad :</label><br />
+        @Html.TextBoxFor(x => x.AD, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.AD, "", new { @style = "color:red" })
+        <br />
+        <label>Soyad :</label><br />
+        @Html.TextBoxFor(x => x.SOYAD, new { @class = "form-control" })
+        @Html.ValidationMessageFor(x => x.SOYAD, "", new { @style = "color:red" })
+    </div>
+    <div style="margin-top:20px;">
+        <button class="btn btn-info">Personel Ekle</button>
+    </div>
+</form>

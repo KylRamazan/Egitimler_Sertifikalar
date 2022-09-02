@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="43d774be184d4c1bbc04366e14cdd31c" Name="Diagram1">
+        <EntityTypeShape EntityType="MvcStokDBModel.TblKategoriler" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MvcStokDBModel.TblMusteriler" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MvcStokDBModel.TblPersoneller" Width="1.5" PointX="3" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MvcStokDBModel.TblSatislar" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MvcStokDBModel.TblUrunler" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="MvcStokDBModel.FK_TblUrunler_TblKategoriler" ManuallyRouted="false" />
+        <AssociationConnector Association="MvcStokDBModel.FK_TblSatislar_TblMusteriler" ManuallyRouted="false" />
+        <AssociationConnector Association="MvcStokDBModel.FK_TblSatislar_TblPersoneller" ManuallyRouted="false" />
+        <AssociationConnector Association="MvcStokDBModel.FK_TblSatislar_TblUrunler" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="MvcStokDBModel.TblAdmin" Width="1.5" PointX="5.875" PointY="4.125" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

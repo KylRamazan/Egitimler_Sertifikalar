@@ -1,0 +1,28 @@
+.center {
+    text-align: center;
+}
+
+.fontSize {
+    font-size: small;
+}
+
+.bgColor{
+    background-color: #EEEEEE;
+}
+
+.bgColor1{
+    background-color: #7EE5DA;
+}
+
+.bgColor2{
+    background-color: #70CCC2;
+}
+
+.bgColor3{
+    background-color: #62B3AA;
+}
+
+.tablo-ortala{
+    margin-left: auto;
+    margin-right: auto;
+}

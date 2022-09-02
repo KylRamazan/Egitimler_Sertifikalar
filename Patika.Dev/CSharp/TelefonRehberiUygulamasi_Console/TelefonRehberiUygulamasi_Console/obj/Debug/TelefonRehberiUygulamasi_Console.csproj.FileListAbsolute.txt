@@ -1,0 +1,7 @@
+C:\Users\kayal\source\repos\TelefonRehberiUygulamasi_Console\TelefonRehberiUygulamasi_Console\bin\Debug\TelefonRehberiUygulamasi_Console.exe.config
+C:\Users\kayal\source\repos\TelefonRehberiUygulamasi_Console\TelefonRehberiUygulamasi_Console\bin\Debug\TelefonRehberiUygulamasi_Console.exe
+C:\Users\kayal\source\repos\TelefonRehberiUygulamasi_Console\TelefonRehberiUygulamasi_Console\bin\Debug\TelefonRehberiUygulamasi_Console.pdb
+C:\Users\kayal\source\repos\TelefonRehberiUygulamasi_Console\TelefonRehberiUygulamasi_Console\obj\Debug\TelefonRehberiUygulamasi_Console.csproj.AssemblyReference.cache
+C:\Users\kayal\source\repos\TelefonRehberiUygulamasi_Console\TelefonRehberiUygulamasi_Console\obj\Debug\TelefonRehberiUygulamasi_Console.csproj.CoreCompileInputs.cache
+C:\Users\kayal\source\repos\TelefonRehberiUygulamasi_Console\TelefonRehberiUygulamasi_Console\obj\Debug\TelefonRehberiUygulamasi_Console.exe
+C:\Users\kayal\source\repos\TelefonRehberiUygulamasi_Console\TelefonRehberiUygulamasi_Console\obj\Debug\TelefonRehberiUygulamasi_Console.pdb

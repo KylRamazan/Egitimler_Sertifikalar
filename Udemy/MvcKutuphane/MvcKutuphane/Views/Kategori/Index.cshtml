@@ -1,0 +1,26 @@
+﻿@using MvcKutuphane.Models.Entity
+@model List<TblKategoriler>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Kategori İşlemleri</h2>
+<table class="table table-bordered">
+    <tr>
+        <th>ID</th>
+        <th>AD</th>
+        <th>SİL</th>
+        <th>GÜNCELLE</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.ID</td>
+            <td>@x.AD</td>
+            <td>@Html.ActionLink("Sil", "kategoriSil", new { id = x.ID }, new { @class = "btn btn-danger", onclick = "return confirm('Kategoriyi Silmek İstiyor Musunuz?')" })</td>
+            <td><a href="/Kategori/kategoriGetir/@x.ID" class="btn btn-success">Güncelle</a></td>
+        </tr>
+    }
+</table>
+<a href="/Kategori/kategoriEkle/" class="btn btn-primary">Yeni Kategori Ekle</a>

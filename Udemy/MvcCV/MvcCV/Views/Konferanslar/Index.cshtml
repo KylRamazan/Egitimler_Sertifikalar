@@ -1,0 +1,39 @@
+﻿@using MvcCV.Models.Entity
+@model List<TblAwards>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+@using(Html.BeginForm("Index","Konferanslar",FormMethod.Get))
+{
+    <p>
+        <b>Aranacak Değer :</b> @Html.TextBox("x") &nbsp; &nbsp;
+        <input type="submit" value="Ara"/>
+    </p>
+}
+<br />
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>KONFERANS</th>
+            <th>SİL</th>
+            <th>GÜNCELLE</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var x in Model)
+        {
+        <tr>
+            <th>@x.ID</th>
+            <td>@x.AWARD</td>
+            <td>@Html.ActionLink("Sil", "konferansSil", new { id = x.ID }, new { @class = "btn btn-danger", onclick = "return confirm('Konferansı Gerçekten Silmek İstiyor Musunuz?')" })</td>
+            <td><a href="/Konferanslar/konferansGetir/@x.ID" class="btn btn-success">Güncelle</a></td>
+        </tr>
+            }
+    </tbody>
+</table>
+
+<a href="/Konferanslar/yeniKonferans/" class="btn btn-primary">Yeni Konferans Ekle</a>

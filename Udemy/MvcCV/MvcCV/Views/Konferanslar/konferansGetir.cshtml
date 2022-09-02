@@ -1,0 +1,18 @@
+﻿@model MvcCV.Models.Entity.TblAwards
+@{
+    ViewBag.Title = "konferansGetir";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+@using (Html.BeginForm("konferansGuncelle", "Konferanslar", FormMethod.Post))
+{
+    <div class="form-group">
+        <label>ID :</label><br />
+        @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
+        <br />
+        <label>Başlık :</label><br />
+        @Html.TextBoxFor(x => x.AWARD, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-warning">Güncelle</button>
+    </div>
+}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TelefonRehberiUygulamasi_Console", "TelefonRehberiUygulamasi_Console\TelefonRehberiUygulamasi_Console.csproj", "{80EBB975-3E06-44BB-AE9A-7805B3A98186}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80EBB975-3E06-44BB-AE9A-7805B3A98186}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80EBB975-3E06-44BB-AE9A-7805B3A98186}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80EBB975-3E06-44BB-AE9A-7805B3A98186}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80EBB975-3E06-44BB-AE9A-7805B3A98186}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2F7D718A-B4D7-426D-9B96-144A699D510C}
+	EndGlobalSection
+EndGlobal

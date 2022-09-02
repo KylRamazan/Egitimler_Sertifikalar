@@ -1,0 +1,30 @@
+﻿@model MvcCV.Models.Entity.TblEducation
+@{
+    ViewBag.Title = "egitimGetir";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+@using (Html.BeginForm("egitimGuncelle", "EgitimHayatim", FormMethod.Post))
+{
+<div class="form-group">
+    <label>ID :</label><br />
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
+    <br />
+    <label>Başlık :</label><br />
+    @Html.TextBoxFor(x => x.TITLE, new { @class = "form-control" })
+    <br />
+    <label>Alt Başlık :</label><br />
+    @Html.TextBoxFor(x => x.SUBTITLE, new { @class = "form-control" })
+    <br />
+    <label>Bölüm :</label><br />
+    @Html.TextBoxFor(x => x.DEPARTMENT, new { @class = "form-control" })
+    <br />
+    <label>GNO :</label><br />
+    @Html.TextBoxFor(x => x.GPA, new { @class = "form-control" })
+    <br />
+    <label>Tarih :</label><br />
+    @Html.TextBoxFor(x => x.DATE, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-warning">Güncelle</button>
+</div>
+}
