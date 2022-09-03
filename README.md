@@ -7,3 +7,7 @@ Eğitimlerde (Udemy, Patika.dev) yaptığım uygulamalar, ödevler ve projeler b
 - Javascript
 - CSS
 - Bootstrap
+- Devexpress
+- Rest API
+- Web API
+- Agile Yazılım Geliştirme
