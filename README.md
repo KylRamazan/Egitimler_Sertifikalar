@@ -2,6 +2,7 @@ Eğitimlerde (Udemy, Patika.dev) yaptığım uygulamalar, ödevler ve projeler b
 
 - C#
 - .Net MVC
+- .Net Core
 - n-tier Katmanlı Mimari
 - Repository Design Pattern
 - Javascript
@@ -13,3 +14,4 @@ Eğitimlerde (Udemy, Patika.dev) yaptığım uygulamalar, ödevler ve projeler b
 - Rest API
 - Web API
 - Agile Yazılım Geliştirme
+- Docker
