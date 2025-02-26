@@ -15,3 +15,4 @@ Eğitimlerde (Udemy, Patika.dev) yaptığım uygulamalar, ödevler ve projeler b
 - Web API
 - Agile Yazılım Geliştirme
 - Docker
+- Elastic Search
