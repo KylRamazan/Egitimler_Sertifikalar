@@ -16,3 +16,5 @@ Eğitimlerde (Udemy, Patika.dev) yaptığım uygulamalar, ödevler ve projeler b
 - Agile Yazılım Geliştirme
 - Docker
 - Elastic Search
+- Rabbit MQ
+- SignalR
