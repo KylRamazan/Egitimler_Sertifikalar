@@ -17,4 +17,5 @@ Eğitimlerde (Udemy, Patika.dev) yaptığım uygulamalar, ödevler ve projeler b
 - Docker
 - Elastic Search
 - Rabbit MQ
+- Redis/In-Memory
 - SignalR
